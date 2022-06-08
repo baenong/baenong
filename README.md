@@ -38,13 +38,47 @@ In Progress
 -
 > YouTube Clone Coding
 - Node.js
-- Express.js
-- Pug
-- MongoDB
-- mongoose
-```
+```javascript
 console.log("Hello World!");
 ```
+- Express.js
+```javascript
+import "dotenv/config";
+import express from "express";
+import session from "express-session";
+import MongoStore from "connect-mongo";
+
+const app = express();
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
+
+app.use(express.urlencoded({ extended: true }));
+
+app.use(
+  session({
+    secret: process.env.COOKIE_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    store: MongoStore.create({ mongoUrl: process.env.DB_URL }),
+  })
+);
+
+const PORT = 4321;
+app.listen(PORT, () => {console.log(`Server Listening on ${PORT}`)});
+
+```
+- Pug
+```pug
+extends base.pug
+block content
+  h1 Hello World!
+```
+- MongoDB
+```
+show dbs
+```
+- mongoose
+
    
 
 Goal
