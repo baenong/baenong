@@ -83,8 +83,8 @@ In Progress
 -
 > Typescript
 ```typescript
-type Add<T> = {
-  (a:T[]):T
+type Add = {
+  <T>(a:T[]):T
 }
 
 const add:Add = (arr) => {
