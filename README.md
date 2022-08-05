@@ -78,6 +78,29 @@ block content
 show dbs
 ```
 - mongoose
+```javascript
+export const search = async (req, res) => {
+  const { keyword } = req.query;
+  let videos = [];
+  if (keyword) {
+    // Search
+    if (keyword.startsWith("#")) {
+      videos = await Video.find({
+        hashtags: keyword,
+      })
+        .sort({ createdAt: "desc" })
+        .populate("owner", ["name", "socialOnly", "avatarUrl"]);
+    } else {
+      videos = await Video.find({
+        title: { $regex: new RegExp(keyword, "i") },
+      })
+        .sort({ createdAt: "desc" })
+        .populate("owner", ["name", "socialOnly", "avatarUrl"]);
+    }
+  }
+  return res.render("search", { pageTitle: "Search", videos });
+};
+```
 
 In Progress
 -
