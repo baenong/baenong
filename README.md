@@ -111,7 +111,7 @@ type Add = {
 }
 
 const add:Add = (arr) => {
-  return a[0];
+  return arr[0];
 }
 
 const a = add([1, 2, 3, 4]);
