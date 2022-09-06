@@ -117,6 +117,17 @@ const add:Add = (arr) => {
 const a = add([1, 2, 3, 4]);
 ```
 
+> Python & Django
+- python
+```python
+list = [a,b,c,d]
+for i in list:
+  print(i)
+```
+- django
+
+> React
+
 Goal
 -
 > CSS Layout
