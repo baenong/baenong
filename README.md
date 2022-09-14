@@ -22,11 +22,11 @@ Study Site
 6. CLEAN Architecture
 
 ---
-ORM
-RESTful API
-Electron으로 데스크톱 게임 만들고 React Native로 스마트폰 게임 만들기
-DI/DC 어떻게 하는지
-Testing 자동화는 어떻게 하는지
-DB 설계는 어떻게 하는지(어떤게 좋은 설계인지)
-결제 개발이 왜 흥미로운 분야인지
-각종 Error Exception 처리
+1. ORM
+2. RESTful API
+3. Electron으로 데스크톱 게임 만들고 React Native로 스마트폰 게임 만들기
+4. DI/DC 어떻게 하는지
+5. Testing 자동화는 어떻게 하는지
+6. DB 설계는 어떻게 하는지(어떤게 좋은 설계인지)
+7. 결제 개발이 왜 흥미로운 분야인지
+8. 각종 Error Exception 처리
