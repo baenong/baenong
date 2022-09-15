@@ -30,3 +30,12 @@ Study Site
 6. DB 설계는 어떻게 하는지(어떤게 좋은 설계인지)
 7. 결제 개발이 왜 흥미로운 분야인지
 8. 각종 Error Exception 처리
+
+---
+현재 목표 기술스택
+1. Node.js 기반
+2. FE : React, React Native
+3. BE : Nest.js
+4. Test : Jest
+5. Language : JS, TS
+6. Util : Git, Github Actions
